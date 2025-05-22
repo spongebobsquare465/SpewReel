@@ -1,6 +1,57 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: Arial, sans-serif; background: #111; color: #fff; }
 
+/* Hamburger Menu Styles */
+    .hamburger-menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 999;
+    }
+
+    .menu-icon {
+      font-size: 30px;
+      color: white;
+      background-color: #222;
+      padding: 10px 15px;
+      cursor: pointer;
+      display: inline-block;
+    }
+
+    #menu-toggle {
+      display: none;
+    }
+
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: -200px;
+      width: 200px;
+      height: 100%;
+      background: #111;
+      padding-top: 60px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      transition: left 0.3s ease;
+      z-index: 998;
+    }
+
+    .sidebar a {
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    .sidebar a:hover {
+      background: #333;
+    }
+
+    #menu-toggle:checked + .menu-icon + .sidebar {
+      left: 0;
+    }
+
     .navbar {
       display: flex; justify-content: space-between; align-items: center;
       padding: 10px; background: #222;
