@@ -1,12 +1,30 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: Arial, sans-serif; background: #111; color: #fff; }
 
-    .logo-container {
-      margin-left: 50px; /* Adds space so it doesn't overlap with hamburger */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 60px 10px 60px;
+      background: #222;
     }
 
-    .navbar {
-      padding-left: 60px; /* Prevents content from sitting under hamburger */
+    .logo-container {
+      flex: 0 0 auto;
+    }
+
+    .search-container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    .search-bar {
+      width: 100%;
+      max-width: 400px;
+      padding: 6px 10px;
+      border-radius: 5px;
+      border: none;
     }
 
 /* Hamburger Menu Styles */
