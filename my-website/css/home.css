@@ -9,15 +9,6 @@
       padding-left: 60px; /* Prevents content from sitting under hamburger */
     }
 
-    .close-hamburger {
-      position: absolute;
-      top: 15px;
-      right: 20px;
-      font-size: 30px;
-      color: red;
-      cursor: pointer;
-    }
-
 /* Hamburger Menu Styles */
     .hamburger-menu {
       position: fixed;
