@@ -247,8 +247,9 @@
   }
 
   .search-container {
-   justify-content: center;
    display: flex;
+   justify-content: center;
+   width: 100%;
    order: 2;
    margin: 10px 0;
   }
@@ -270,9 +271,8 @@
   }
 
   .search-bar {
-    max-width: 300px;
     width: 90%;
-    margin-top: 10px;
+    max-width: 300px;
   }
 
   .banner {
