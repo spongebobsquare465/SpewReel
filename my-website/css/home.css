@@ -10,7 +10,7 @@
     }
 
     .logo-container {
-      flex: 0 0 auto;
+      margin-left: 50px; /* Adds space so it doesn't overlap with hamburger */
     }
 
     .search-container {
