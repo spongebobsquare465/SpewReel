@@ -60,6 +60,15 @@
       left: 0;
     }
 
+    /* Close icon inside sidebar */
+    .close-icon {
+      font-size: 26px;
+      color: red;
+      cursor: pointer;
+      padding: 10px 20px;
+      align-self: flex-end;
+    }
+
     .navbar {
       display: flex; justify-content: space-between; align-items: center;
       padding: 10px; background: #222;
