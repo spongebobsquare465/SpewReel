@@ -1,6 +1,14 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: Arial, sans-serif; background: #111; color: #fff; }
 
+    .logo-container {
+      margin-left: 50px; /* Adds space so it doesn't overlap with hamburger */
+    }
+
+    .navbar {
+      padding-left: 60px; /* Prevents content from sitting under hamburger */
+    }
+
 /* Hamburger Menu Styles */
     .hamburger-menu {
       position: fixed;
