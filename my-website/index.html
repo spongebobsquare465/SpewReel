@@ -13,7 +13,7 @@
 
 <body>
   <div class="navbar">
-    <img src="/mnt/data/spewlogo.png" alt="SpewReel Logo">
+    <img src="spewlogo.png" alt="LOGO HERE" />
     <div class="nav-links">
       <a href="index.html">Home</a>
       <input type="text" class="search-bar" placeholder="Search..." onfocus="openSearchModal()" />
@@ -21,7 +21,7 @@
   </div>
 
   <div class="banner" id="banner">
-    <h1 id="banner-title">Welcome to SpewReel</h1>
+    <h1 id="banner-title"></h1>
   </div>
 
   <div class="row">
@@ -41,15 +41,16 @@
 
   <div class="modal" id="modal">
     <div class="modal-content">
-      <span class="close" onclick="closeModal()">&times;</span>
+      <span class="close" onclick="closeModal()" style="color: red;">&times;</span>
       <div class="modal-body">
-        <img id="modal-image" src="" alt="" />
-        <div class="modal-text">
-          <h2 id="modal-title"></h2>
-          <div class="stars" id="modal-rating"></div>
-          <p id="modal-description"></p>
-        </div>
-      </div>
+  <img id="modal-image" src="" alt="" />
+  <div class="modal-text">
+    <h2 id="modal-title"></h2>
+    <div class="stars" id="modal-rating"></div>
+    <p id="modal-description"></p>
+  </div>
+</div>
+      
       <div class="server-selector">
         <label for="server">Change Server:</label>
         <select id="server" onchange="changeServer()">
@@ -63,19 +64,21 @@
   </div>
 
   <div class="search-modal" id="search-modal">
-    <span class="close" onclick="closeSearchModal()">&times;</span>
+    <span class="close" onclick="closeSearchModal()" style="color: red;">&times;</span>
     <input type="text" id="search-input" placeholder="Search for a movie or show..." oninput="searchTMDB()" />
     <div class="results" id="search-results"></div>
   </div>
 
-  <footer class="footer">
-    <div class="footer-content">
-      <p>&copy; 2025 SpewReel. All rights reserved.</p>
-      <div class="footer-links">
-        <a href="#">Disclaimer</a>
-        <a href="#">About Us</a>
-        <a href="#">Contact Us</a>
-      </div>
+<footer class="footer">
+  <div class="footer-content">
+    <p>&copy; 2025 SpewReel. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#">Disclaimer</a>
+      <a href="#">About Us</a>
+      <a href="#">Contact Us</a>
     </div>
-  </footer>
+  </div>
+</footer>
+
+  
 </body>
